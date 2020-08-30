@@ -4,10 +4,6 @@
     <expand>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
       <path>
@@ -20,33 +16,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74812bcb-33e7-47dd-b4d8-c480a8f19ef3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20200826072251-create-users-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20200826072252-create-categories-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20200826072335-create-posts-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20200826072444-create-comments-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20200826072516-create-notices-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20200826072541-create-Like-table.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../client/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../client/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/migrations/1-mega-migration.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/migrations/_current.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/category.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/category.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/comment.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/comment.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/notice.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/notice.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/post.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/post.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/user.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/mysqlConnector.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/mysqlConnector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Unit/Services/user.service.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Unit/Services/user.service.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Unit/Services/notice.service.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Unit/Services/notice.service.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Unit/Services/post.service.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Unit/Services/post.service.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -62,7 +46,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/Unit/Services" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -73,11 +57,17 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettier.import.notification.dismissed" value="true" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/Unit/Services" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/db/models" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/test/Unit/Services" />
@@ -85,10 +75,23 @@
       <recent name="$PROJECT_DIR$/src/routes" />
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/db/models" />
-    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -101,6 +104,8 @@
       <workItem from="1597307135651" duration="30507000" />
       <workItem from="1597703671845" duration="26592000" />
       <workItem from="1598221114885" duration="1288000" />
+      <workItem from="1598487340278" duration="3279000" />
+      <workItem from="1598521450277" duration="12877000" />
     </task>
     <servers />
   </component>
@@ -128,6 +133,22 @@
       <screen x="0" y="23" width="5120" height="1417" />
     </state>
     <state x="3396" y="123" width="1545" height="1195" key="DiffContextDialog/0.23.5120.1417@0.23.5120.1417" timestamp="1598404374151" />
+    <state width="2667" height="397" key="GridCell.Tab.0.bottom" timestamp="1598457023483">
+      <screen x="0" y="23" width="5120" height="1417" />
+    </state>
+    <state width="2667" height="397" key="GridCell.Tab.0.bottom/0.23.5120.1417@0.23.5120.1417" timestamp="1598457023483" />
+    <state width="2667" height="397" key="GridCell.Tab.0.center" timestamp="1598457023482">
+      <screen x="0" y="23" width="5120" height="1417" />
+    </state>
+    <state width="2667" height="397" key="GridCell.Tab.0.center/0.23.5120.1417@0.23.5120.1417" timestamp="1598457023482" />
+    <state width="2667" height="397" key="GridCell.Tab.0.left" timestamp="1598457023469">
+      <screen x="0" y="23" width="5120" height="1417" />
+    </state>
+    <state width="2667" height="397" key="GridCell.Tab.0.left/0.23.5120.1417@0.23.5120.1417" timestamp="1598457023469" />
+    <state width="2667" height="397" key="GridCell.Tab.0.right" timestamp="1598457023483">
+      <screen x="0" y="23" width="5120" height="1417" />
+    </state>
+    <state width="2667" height="397" key="GridCell.Tab.0.right/0.23.5120.1417@0.23.5120.1417" timestamp="1598457023483" />
     <state x="2363" y="357" key="RollbackChangesDialog" timestamp="1597441851055">
       <screen x="0" y="23" width="5120" height="1417" />
     </state>
@@ -148,9 +169,9 @@
       <screen x="0" y="23" width="5120" height="1417" />
     </state>
     <state x="3876" y="459" width="584" height="580" key="find.popup/0.23.5120.1417@0.23.5120.1417" timestamp="1598419385446" />
-    <state x="1702" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1597613418134">
+    <state x="1702" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1598546085299">
       <screen x="0" y="23" width="5120" height="1417" />
     </state>
-    <state x="1702" y="348" width="670" height="676" key="search.everywhere.popup/0.23.5120.1417@0.23.5120.1417" timestamp="1597613418134" />
+    <state x="1702" y="348" width="670" height="676" key="search.everywhere.popup/0.23.5120.1417@0.23.5120.1417" timestamp="1598546085299" />
   </component>
 </project>

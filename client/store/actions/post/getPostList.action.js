@@ -6,15 +6,31 @@ import {
   GET_POST_LIST_SUCCESS,
 } from '../../type';
 
-export const getPostListRequestAction = () => ({
+export const getPostListRequestAction = (data) => ({
   type: GET_POST_LIST_REQUEST,
+  data,
 });
 
-const getPostListAPI = () => axios.get('/post/all');
+const getPostListAPI = (data) => {
+  if (data) {
+    if (data.title && data.CategoryId) {
+      return axios.get(
+        `/post/all?title=${data.title}&CategoryId=${data.CategoryId}`
+      );
+    }
+    if (data.title) {
+      return axios.get(`/post/all?title=${data.title}`);
+    }
+    if (data.CategoryId) {
+      return axios.get(`/post/all?CategoryId=${data.CategoryId}`);
+    }
+  }
+  return axios.get(`/post/all`);
+};
 
-export function* getPostList() {
+export function* getPostList(action) {
   try {
-    const result = yield call(getPostListAPI);
+    const result = yield call(getPostListAPI, action.data);
     yield put({
       type: GET_POST_LIST_SUCCESS,
       payload: result.data,

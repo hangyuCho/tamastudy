@@ -4,6 +4,8 @@ const { isLoggedIn } = require('./middlewares/auth');
 const { getCurrentPost, isPostAuthor } = require('./middlewares/post');
 const commentRouters = require('./comment.route');
 const categoryRouters = require('./category.route');
+const advancedResults = require('./middlewares/advancedResults');
+const { findPostList } = require('../services/post.service');
 
 const router = express.Router();
 
@@ -12,7 +14,14 @@ router.use('/category', categoryRouters);
 router.use('/:postId/comment', commentRouters);
 
 router.post('/create', isLoggedIn, postController.createPost);
-router.get('/all', postController.getPostList);
+router.get(
+  '/all',
+  advancedResults(findPostList, [
+    { column: 'title', mode: 'like' },
+    { column: 'CategoryId', mode: 'normal' },
+  ]),
+  postController.getPostList
+);
 router.get('/:postId', getCurrentPost, postController.getPost);
 router.put(
   '/:postId/edit',

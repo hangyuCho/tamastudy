@@ -11,7 +11,6 @@ const helmet = require('helmet');
 const app = express();
 require('./passport')();
 const routes = require('./routes');
-// require('./db/mysqlConnector');
 const db = require('./db/models');
 
 db.sequelize

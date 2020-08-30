@@ -95,6 +95,7 @@ const PageLayoutWithNav = ({ pageName, children }) => {
 
 PageLayoutWithNav.propTypes = {
   pageName: PropTypes.string.isRequired,
+  children: PropTypes.array.isRequired,
 };
 
 export { PageLayoutWithNav };

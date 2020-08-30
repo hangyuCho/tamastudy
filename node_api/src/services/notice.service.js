@@ -1,21 +1,15 @@
 const { Notice, User } = require('../db/models');
 
-module.exports.findNoticeList = async ({ offset, limit }) => {
-  const noticeListRecord = await Notice.findAll({
+module.exports.findNoticeList = async ({ query }) => {
+  return await Notice.findAll({
+    ...query,
     include: [
       {
         model: User,
         attributes: ['id', 'username', 'email'],
       },
     ],
-    offset,
-    limit,
-    order: [
-      ['id', 'DESC'],
-      ['updatedAt', 'DESC'],
-    ],
   });
-  return { noticeList: noticeListRecord };
 };
 
 module.exports.findNoticeById = async ({ noticeId }) => {

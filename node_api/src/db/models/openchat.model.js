@@ -1,21 +1,26 @@
 const DataTypes = require('sequelize');
 const { Model } = DataTypes;
 
-module.exports = class Category extends Model {
+module.exports = class Openchat extends Model {
   static init(sequelize) {
     return super.init(
       {
-        name: {
-          type: DataTypes.STRING(30),
+        title: {
+          type: DataTypes.STRING(255),
           allowNull: false,
-          unique: true,
-          trim: true,
-          isLowercase: true,
+        },
+        desc: {
+          type: DataTypes.STRING(10000),
+          allowNull: false,
+        },
+        code: {
+          type: DataTypes.INTEGER(10),
+          allowNull: true,
         },
       },
       {
-        modelName: 'Category',
-        tableName: 'categories',
+        modelName: 'Openchat',
+        tableName: 'openchats',
         charset: 'utf8',
         collate: 'utf8_general_ci', // 한글 저장 , 이모티콘 저장
         sequelize,
@@ -24,13 +29,8 @@ module.exports = class Category extends Model {
   }
 
   static associate(db) {
-    db.Category.hasOne(db.Post, {
-      foreignKey: {
-        field: 'CategoryId',
-        allowNull: false,
-      },
-    });
-    db.Category.hasOne(db.Post, {
+    db.Openchat.belongsTo(db.User);
+    db.Openchat.belongsTo(db.Category, {
       foreignKey: {
         field: 'CategoryId',
         allowNull: false,

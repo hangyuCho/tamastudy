@@ -15,6 +15,7 @@ module.exports = {
     host: DB_HOST,
     port: DB_PORT,
     dialect: 'mysql',
+    logging: false,
   },
   test: {
     username: DB_USERNAME,

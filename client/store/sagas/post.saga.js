@@ -3,6 +3,7 @@ import {
   CREATE_POST_REQUEST,
   DELETE_POST_REQUEST,
   EDIT_POST_REQUEST,
+  GET_MORE_POST_LIST_REQUEST,
   GET_POST_LIST_REQUEST,
   GET_POST_REQUEST,
   LIKE_POST_REQUEST,
@@ -15,6 +16,7 @@ import { editPost } from '../actions/post/editPost.action';
 import { deletePost } from '../actions/post/deletePost.action';
 import { likePost } from '../actions/post/likePost.action';
 import { unLikePost } from '../actions/post/unLikePost.action';
+import { getMorePostList } from '../actions/post/getMorePostList.action';
 
 function* watchCreatePost() {
   yield takeLatest(CREATE_POST_REQUEST, createPost);
@@ -22,6 +24,10 @@ function* watchCreatePost() {
 
 function* watchGetPostList() {
   yield takeLatest(GET_POST_LIST_REQUEST, getPostList);
+}
+
+function* watchGetMorePostList() {
+  yield takeLatest(GET_MORE_POST_LIST_REQUEST, getMorePostList);
 }
 
 function* watchGetPost() {
@@ -48,6 +54,7 @@ export default function* postSaga() {
   yield all([
     fork(watchCreatePost),
     fork(watchGetPostList),
+    fork(watchGetMorePostList),
     fork(watchGetPost),
     fork(watchEditPost),
     fork(watchDeletePost),

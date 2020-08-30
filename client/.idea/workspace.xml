@@ -20,28 +20,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6abbbcf-02aa-45bf-a85a-ac0845627f5e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../node_api/src/db/migrations/20200826072251-create-users-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_api/src/db/migrations/20200826072252-create-categories-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_api/src/db/migrations/20200826072335-create-posts-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_api/src/db/migrations/20200826072444-create-comments-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_api/src/db/migrations/20200826072516-create-notices-table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../node_api/src/db/migrations/20200826072541-create-Like-table.js" afterDir="false" />
+<<<<<<< HEAD
+      <change afterPath="$PROJECT_DIR$/../node_api/src/controllers/openchat.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../node_api/src/routes/openchat.route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../node_api/src/test/Unit/Services/category.service.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../node_api/src/test/Unit/Services/comment.service.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../node_api/src/test/Unit/Services/notice.service.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../node_api/src/test/Unit/Services/openchat.service.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../node_api/src/test/Unit/Services/post.service.test.js" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/../node_api/src/routes/middlewares/advancedResults.js" afterDir="false" />
+>>>>>>> [JDNS-25-advanced-results] 테스트 전
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../node_api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../node_api/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../node_api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../node_api/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../node_api/src/db/config/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/db/config/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../node_api/src/db/migrations/1-mega-migration.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../node_api/src/db/migrations/_current.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_api/src/controllers/notice.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/controllers/notice.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_api/src/controllers/post.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/controllers/post.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../node_api/src/db/models/category.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/db/models/category.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../node_api/src/db/models/comment.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/db/models/comment.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../node_api/src/db/models/notice.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/db/models/notice.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../node_api/src/db/models/post.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/db/models/post.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../node_api/src/db/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/db/models/user.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../node_api/src/db/mysqlConnector.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/db/mysqlConnector.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../node_api/src/test/Unit/Services/user.service.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/test/Unit/Services/user.service.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../node_api/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_api/src/db/seeders/20200826013338-post.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/db/seeders/20200826013338-post.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_api/src/routes/comment.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/routes/comment.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_api/src/routes/notice.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/routes/notice.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_api/src/routes/post.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/routes/post.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_api/src/services/notice.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/services/notice.service.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../node_api/src/services/post.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/../node_api/src/services/post.service.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +77,7 @@
     <property name="javascript.nodejs.core.library.configured.version" value="14.8.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.6.0" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/components/forms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -94,18 +94,18 @@
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/store/actions/post" />
+      <recent name="$PROJECT_DIR$/components/forms" />
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$/store/actions/notice" />
+      <recent name="$PROJECT_DIR$/components/atoms/authForm" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/components/molecules" />
       <recent name="$PROJECT_DIR$/components/organisms" />
       <recent name="$PROJECT_DIR$/components/forms" />
       <recent name="$PROJECT_DIR$/components/templates" />
-      <recent name="$PROJECT_DIR$/components/atoms" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/components/forms" />
-      <recent name="$PROJECT_DIR$/pages" />
-      <recent name="$PROJECT_DIR$/store/actions/notice" />
-      <recent name="$PROJECT_DIR$/components/atoms/authForm" />
       <recent name="$PROJECT_DIR$/components/atoms" />
     </key>
   </component>
@@ -132,6 +132,12 @@
       <workItem from="1597710815007" duration="55218000" />
       <workItem from="1598012907827" duration="52919000" />
       <workItem from="1598221113766" duration="1143000" />
+      <workItem from="1598487343864" duration="7219000" />
+<<<<<<< HEAD
+      <workItem from="1598521470844" duration="1195000" />
+=======
+      <workItem from="1598521470844" duration="2045000" />
+>>>>>>> [JDNS-25-advanced-results] 테스트 전
     </task>
     <servers />
   </component>
@@ -243,10 +249,10 @@
       <screen x="0" y="23" width="5120" height="1417" />
     </state>
     <state x="3481" y="441" width="660" height="672" key="find.popup/0.23.5120.1417@0.23.5120.1417" timestamp="1598033468590" />
-    <state x="3438" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1598195185398">
+    <state x="3438" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1598507277462">
       <screen x="0" y="23" width="5120" height="1417" />
     </state>
     <state x="1128" y="259" width="670" height="490" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1597501118531" />
-    <state x="3438" y="348" width="670" height="676" key="search.everywhere.popup/0.23.5120.1417@0.23.5120.1417" timestamp="1598195185398" />
+    <state x="3438" y="348" width="670" height="676" key="search.everywhere.popup/0.23.5120.1417@0.23.5120.1417" timestamp="1598507277462" />
   </component>
 </project>

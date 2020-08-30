@@ -8,7 +8,7 @@ const generatePosts = async ({ CategoryIds, UserIds }) => {
     let desc = faker.lorem.paragraph();
     let view = faker.random.number();
     let categoryRanNum = Math.floor(
-      Math.random() * Math.floor(CategoryIds.length)
+      Math.random() * Math.floor(CategoryIds.length - 1)
     );
     let userRanNum = Math.floor(Math.random() * Math.floor(UserIds.length));
     let createdAt = faker.date.between('2020-01-01', '2020-08-26');

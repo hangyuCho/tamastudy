@@ -4,6 +4,7 @@ const post = require('./post.model');
 const comment = require('./comment.model');
 const category = require('./category.model');
 const notice = require('./notice.model');
+const openchat = require('./openchat.model');
 
 const env = process.env.NODE_ENV || 'development';
 const config = require('../config/config')[env];
@@ -16,6 +17,7 @@ const sequelize = new Sequelize(
   config
 );
 
+db.Openchat = openchat;
 db.Notice = notice;
 db.Category = category;
 db.Comment = comment;

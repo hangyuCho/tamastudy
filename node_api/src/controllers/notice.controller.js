@@ -2,7 +2,6 @@ const expressAsyncHandler = require('express-async-handler');
 const {
   createNotice,
   findNoticeById,
-  findNoticeList,
   updateNoticeById,
 } = require('../services/notice.service');
 
@@ -15,10 +14,7 @@ module.exports.createNotice = expressAsyncHandler(async (req, res) => {
 });
 
 module.exports.getNoticeList = expressAsyncHandler(async (req, res) => {
-  const offset = req.query.offset ? parseInt(req.query.offset, 10) : 0;
-  const limit = req.query.limit ? parseInt(req.query.limit, 10) : null;
-  const { noticeList } = await findNoticeList({ offset, limit });
-  res.status(200).json(noticeList);
+  res.status(200).json(req.advancedResults);
 });
 
 module.exports.getNotice = expressAsyncHandler(async (req, res) => {

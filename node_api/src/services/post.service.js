@@ -1,7 +1,8 @@
 const { User, Category, Post, Comment } = require('../db/models');
 
-module.exports.findPostList = async () => {
-  const postListRecord = await Post.findAll({
+module.exports.findPostList = async ({ query }) => {
+  return await Post.findAll({
+    ...query,
     include: [
       {
         model: User,
@@ -21,12 +22,7 @@ module.exports.findPostList = async () => {
         attributes: ['id', 'name'],
       },
     ],
-    order: [
-      ['id', 'DESC'],
-      ['updatedAt', 'DESC'],
-    ],
   });
-  return { postList: postListRecord };
 };
 
 module.exports.findPostById = async ({ postId }) => {

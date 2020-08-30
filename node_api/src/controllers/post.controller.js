@@ -1,7 +1,7 @@
 const expressAsyncHandler = require('express-async-handler');
+
 const {
   findPostById,
-  findPostList,
   createPost,
   updatePostById,
 } = require('../services/post.service');
@@ -15,8 +15,7 @@ module.exports.createPost = expressAsyncHandler(async (req, res) => {
 });
 
 module.exports.getPostList = expressAsyncHandler(async (req, res) => {
-  const { postList } = await findPostList();
-  res.status(200).json(postList);
+  res.status(200).json(req.advancedResults);
 });
 
 module.exports.getPost = expressAsyncHandler(async (req, res) => {
